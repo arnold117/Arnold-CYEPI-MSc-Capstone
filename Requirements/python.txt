@@ -1,0 +1,11 @@
+# =============================================================================
+# PYTHON PACKAGE REQUIREMENTS
+# =============================================================================
+
+# Core Python Environment
+jupyterlab                    # Modern web-based interactive development environment
+ipykernel                     # IPython kernel for Jupyter
+bash_kernel                   # Bash kernel for Jupyter notebooks
+jupyterlab-system-monitor     # System resource monitoring extension
+jupyterlab-drawio            # Draw.io integration for diagrams
+jupyterlab-link-share        # Easy link sharing for JupyterLab

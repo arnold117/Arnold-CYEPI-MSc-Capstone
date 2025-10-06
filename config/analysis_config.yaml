@@ -1,0 +1,57 @@
+# config/analysis_config.yaml - 完整的分析参数配置
+# filepath: config/analysis_config.yaml
+
+project:
+  name: "LightSPAN Cyepi Analysis"
+  version: "1.0.0"
+  author: "Arnold"
+  description: "A comprehensive analysis of light exposure data using Actlumus devices and mHLEA assessments"
+
+data:
+  external_data_path: "../cyepi-data-share/individual/"
+  raw_data_path: "data/d01_raw_loaded/"
+  processed_data_path: "data/d02_transformed/"
+  aggregated_data_path: "data/d03_aggregated/"
+  split_path: "data/d04_split"
+  dl_ready_path: "data/d05_dl_ready/"
+
+preprocessing:
+  actlumus:
+    time_interval: "10 second"
+    timezone: "Europe/Berlin"
+    reconstruct:
+      path: "config/actlumus_reconstruct_weights/"
+      alpha_weights: "alpha_opic.csv"
+      spd_weights: "WSPD_new.csv"
+    remove_zeros: true
+    log_transform: true
+    aggregation_method: "medoid"
+  hlea:
+    time_interval: "1 hour"
+    fix_backwards_timestamps: true
+    timezone: "Europe/Berlin"
+
+deep_learning:
+  test_split: 0.2
+  random_seed: 1234
+  # max_runtime_secs: 100 # comply with poor machine
+  nfolds: 5
+  cross_validation: true
+  
+  # H2O specific settings
+  h2o:
+    nthreads: -1
+    max_mem_size: "8G"
+
+outputs:
+  path: "outputs/"
+  save_intermediate: true
+  figure_format: "png"
+  figure_dpi: 300
+  figure_width: 10
+  figure_height: 8
+
+# 添加一些新的配置节
+logging:
+  level: "INFO"
+  log_file: "temp/analysis.log"

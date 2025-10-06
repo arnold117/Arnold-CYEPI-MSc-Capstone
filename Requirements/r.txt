@@ -1,0 +1,44 @@
+# =============================================================================
+# R PACKAGE REQUIREMENTS
+# =============================================================================
+
+# Core R Environment
+IRkernel          # R kernel for Jupyter notebooks
+remotes           # Install R packages from remote repositories
+devtools          # Development tools for R packages
+rJava             # Low-level R to Java interface
+
+# Data Import/Export
+readxl            # Read Excel files
+writexl           # Write Excel files
+
+# Data Science Framework
+tidyverse         # Collection of data science packages
+tidymodels        # Modeling framework
+
+# Statistical Analysis
+LightLogR         # Light logging analysis
+Spectran          # Spectral analysis
+blandr            # Bland-Altman plots
+factoextra        # Extract and visualize PCA results
+corrplot          # Visualize correlation matrices
+
+# Machine Learning
+h2o               # Scalable machine learning platform
+themis            # Handle imbalanced datasets
+
+# Data Visualization
+ggstream          # Stream plots
+Polychrome        # Color palettes for visualization
+patchwork         # Combine multiple ggplots
+cowplot           # Publication-ready plots
+gridExtra         # Arrange multiple plots
+RColorBrewer      # Color palettes
+viridis           # Perceptually uniform color scales
+
+# Statistical Analysis (Additional)
+FactoMineR        # Multivariate exploratory data analysis and data mining
+
+# Utility Libraries
+stringr           # String manipulation (included in tidyverse but may need explicit loading)
+lubridate         # Date and time manipulation (included in tidyverse but may need explicit loading)
