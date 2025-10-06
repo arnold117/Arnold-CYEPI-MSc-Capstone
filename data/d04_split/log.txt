@@ -1,0 +1,245 @@
+Loading aggregated data...
+Loading sensor_data_l2_agg ...
+✓ Loaded sensor_data_l2_agg successfully
+  Records: 4420
+  Participants: 26
+Loading alpha_data_l2_agg ...
+✓ Loaded alpha_data_l2_agg successfully
+  Records: 4419
+  Participants: 26
+Loading spd_data_l2_agg ...
+✓ Loaded spd_data_l2_agg successfully
+  Records: 4412
+  Participants: 26
+Successfully loaded 3 aggregated datasets
+
+=== Participant-wise Train/Test Split ===
+Total participants: 26
+Train participants: 20
+Test participants: 6
+
+=== Processing all combinations ===
+
+--- Processing dataset: sensor_data_l2_agg ---
+
+  Task: light_type ( light_type )
+    Classification: binary
+      SMOTE-TOMEK: none
+        Excluding classes for binary classification: Dark
+        Removed 978 rows
+        ✓ Saved: sensor_data_l2_agg_light_type_binary_train.rds ( 2072 rows)
+        ✓ Saved: sensor_data_l2_agg_light_type_binary_test.rds ( 645 rows)
+        Train distribution: Artificial=878, Natural=1194
+        Test distribution: Artificial=274, Natural=371
+      SMOTE-TOMEK: smote_tomek
+        Excluding classes for binary classification: Dark 
+        Removed 978 rows
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 92 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: sensor_data_l2_agg_light_type_binary_smote_tomek_train.rds ( 2164 rows)
+        ✓ Saved: sensor_data_l2_agg_light_type_binary_smote_tomek_test.rds ( 645 rows)
+        Train distribution: Artificial=1082, Natural=1082
+        Test distribution: Artificial=274, Natural=371
+    Classification: multiclass
+      SMOTE-TOMEK: none
+        ✓ Saved: sensor_data_l2_agg_light_type_multiclass_train.rds ( 3050 rows)
+        ✓ Saved: sensor_data_l2_agg_light_type_multiclass_test.rds ( 941 rows)
+        Train distribution: Artificial=878, Dark=978, Natural=1194
+        Test distribution: Artificial=274, Dark=296, Natural=371
+      SMOTE-TOMEK: smote_tomek
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 160 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: sensor_data_l2_agg_light_type_multiclass_smote_tomek_train.rds ( 3210 rows)
+        ✓ Saved: sensor_data_l2_agg_light_type_multiclass_smote_tomek_test.rds ( 941 rows)
+        Train distribution: Artificial=1076, Dark=1109, Natural=1025
+        Test distribution: Artificial=274, Dark=296, Natural=371
+
+  Task: location ( location )
+    Classification: binary
+      SMOTE-TOMEK: none
+        Excluding classes for binary classification: Dark 
+        Removed 978 rows
+        ✓ Saved: sensor_data_l2_agg_location_binary_train.rds ( 2072 rows)
+        ✓ Saved: sensor_data_l2_agg_location_binary_test.rds ( 645 rows)
+        Train distribution: In=1811, Out=261
+        Test distribution: In=535, Out=110
+      SMOTE-TOMEK: smote_tomek
+        Excluding classes for binary classification: Dark
+        Removed 978 rows
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 1412 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: sensor_data_l2_agg_location_binary_smote_tomek_train.rds ( 3484 rows)
+        ✓ Saved: sensor_data_l2_agg_location_binary_smote_tomek_test.rds ( 645 rows)
+        Train distribution: In=1742, Out=1742 
+        Test distribution: In=535, Out=110
+    Classification: multiclass
+      SMOTE-TOMEK: none
+        ✓ Saved: sensor_data_l2_agg_location_multiclass_train.rds ( 3050 rows)
+        ✓ Saved: sensor_data_l2_agg_location_multiclass_test.rds ( 941 rows)
+        Train distribution: Dark=978, In=1811, Out=261
+        Test distribution: Dark=296, In=535, Out=110 
+      SMOTE-TOMEK: smote_tomek
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 2115 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: sensor_data_l2_agg_location_multiclass_smote_tomek_train.rds ( 5165 rows)
+        ✓ Saved: sensor_data_l2_agg_location_multiclass_smote_tomek_test.rds ( 941 rows)
+        Train distribution: Dark=1746, In=1689, Out=1730
+        Test distribution: Dark=296, In=535, Out=110
+
+--- Processing dataset: alpha_data_l2_agg ---
+
+  Task: light_type ( light_type )
+    Classification: binary
+      SMOTE-TOMEK: none
+        Excluding classes for binary classification: Dark 
+        Removed 978 rows
+        ✓ Saved: alpha_data_l2_agg_light_type_binary_train.rds ( 2071 rows)
+        ✓ Saved: alpha_data_l2_agg_light_type_binary_test.rds ( 645 rows)
+        Train distribution: Artificial=877, Natural=1194
+        Test distribution: Artificial=274, Natural=371
+      SMOTE-TOMEK: smote_tomek
+        Excluding classes for binary classification: Dark 
+        Removed 978 rows
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 37 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: alpha_data_l2_agg_light_type_binary_smote_tomek_train.rds ( 2108 rows)
+        ✓ Saved: alpha_data_l2_agg_light_type_binary_smote_tomek_test.rds ( 645 rows)
+        Train distribution: Artificial=1054, Natural=1054 
+        Test distribution: Artificial=274, Natural=371
+    Classification: multiclass
+      SMOTE-TOMEK: none
+        ✓ Saved: alpha_data_l2_agg_light_type_multiclass_train.rds ( 3049 rows)
+        ✓ Saved: alpha_data_l2_agg_light_type_multiclass_test.rds ( 941 rows)
+        Train distribution: Artificial=877, Dark=978, Natural=1194
+        Test distribution: Artificial=274, Dark=296, Natural=371 
+      SMOTE-TOMEK: smote_tomek
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 65 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: alpha_data_l2_agg_light_type_multiclass_smote_tomek_train.rds ( 3114 rows)
+        ✓ Saved: alpha_data_l2_agg_light_type_multiclass_smote_tomek_test.rds ( 941 rows)
+        Train distribution: Artificial=1039, Dark=1086, Natural=989
+        Test distribution: Artificial=274, Dark=296, Natural=371
+
+  Task: location ( location )
+    Classification: binary
+      SMOTE-TOMEK: none
+        Excluding classes for binary classification: Dark
+        Removed 978 rows
+        ✓ Saved: alpha_data_l2_agg_location_binary_train.rds ( 2071 rows)
+        ✓ Saved: alpha_data_l2_agg_location_binary_test.rds ( 645 rows)
+        Train distribution: In=1810, Out=261
+        Test distribution: In=535, Out=110
+      SMOTE-TOMEK: smote_tomek
+        Excluding classes for binary classification: Dark 
+        Removed 978 rows
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 1299 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: alpha_data_l2_agg_location_binary_smote_tomek_train.rds ( 3370 rows)
+        ✓ Saved: alpha_data_l2_agg_location_binary_smote_tomek_test.rds ( 645 rows)
+        Train distribution: In=1685, Out=1685
+        Test distribution: In=535, Out=110
+    Classification: multiclass
+      SMOTE-TOMEK: none
+        ✓ Saved: alpha_data_l2_agg_location_multiclass_train.rds ( 3049 rows)
+        ✓ Saved: alpha_data_l2_agg_location_multiclass_test.rds ( 941 rows)
+        Train distribution: Dark=978, In=1810, Out=261
+        Test distribution: Dark=296, In=535, Out=110
+      SMOTE-TOMEK: smote_tomek
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 1949 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: alpha_data_l2_agg_location_multiclass_smote_tomek_train.rds ( 4998 rows)
+        ✓ Saved: alpha_data_l2_agg_location_multiclass_smote_tomek_test.rds ( 941 rows)
+        Train distribution: Dark=1704, In=1621, Out=1673
+        Test distribution: Dark=296, In=535, Out=110
+
+--- Processing dataset: spd_data_l2_agg ---
+
+  Task: light_type ( light_type )
+    Classification: binary
+      SMOTE-TOMEK: none
+        Excluding classes for binary classification: Dark 
+        Removed 975 rows
+        ✓ Saved: spd_data_l2_agg_light_type_binary_train.rds ( 2069 rows)
+        ✓ Saved: spd_data_l2_agg_light_type_binary_test.rds ( 644 rows)
+        Train distribution: Artificial=875, Natural=1194
+        Test distribution: Artificial=273, Natural=371
+      SMOTE-TOMEK: smote_tomek
+        Excluding classes for binary classification: Dark 
+        Removed 975 rows
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 127 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: spd_data_l2_agg_light_type_binary_smote_tomek_train.rds ( 2196 rows)
+        ✓ Saved: spd_data_l2_agg_light_type_binary_smote_tomek_test.rds ( 644 rows)
+        Train distribution: Artificial=1098, Natural=1098
+        Test distribution: Artificial=273, Natural=371
+    Classification: multiclass
+      SMOTE-TOMEK: none
+        ✓ Saved: spd_data_l2_agg_light_type_multiclass_train.rds ( 3044 rows)
+        ✓ Saved: spd_data_l2_agg_light_type_multiclass_test.rds ( 939 rows)
+        Train distribution: Artificial=875, Dark=975, Natural=1194
+        Test distribution: Artificial=273, Dark=295, Natural=371
+      SMOTE-TOMEK: smote_tomek
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 200 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: spd_data_l2_agg_light_type_multiclass_smote_tomek_train.rds ( 3244 rows)
+        ✓ Saved: spd_data_l2_agg_light_type_multiclass_smote_tomek_test.rds ( 939 rows)
+        Train distribution: Artificial=1094, Dark=1112, Natural=1038
+        Test distribution: Artificial=273, Dark=295, Natural=371
+
+  Task: location ( location )
+    Classification: binary
+      SMOTE-TOMEK: none
+        Excluding classes for binary classification: Dark
+        Removed 975 rows
+        ✓ Saved: spd_data_l2_agg_location_binary_train.rds ( 2069 rows)
+        ✓ Saved: spd_data_l2_agg_location_binary_test.rds ( 644 rows)
+        Train distribution: In=1808, Out=261
+        Test distribution: In=534, Out=110
+      SMOTE-TOMEK: smote_tomek
+        Excluding classes for binary classification: Dark
+        Removed 975 rows
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 1437 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: spd_data_l2_agg_location_binary_smote_tomek_train.rds ( 3506 rows)
+        ✓ Saved: spd_data_l2_agg_location_binary_smote_tomek_test.rds ( 644 rows)
+        Train distribution: In=1753, Out=1753
+        Test distribution: In=534, Out=110
+    Classification: multiclass
+      SMOTE-TOMEK: none
+        ✓ Saved: spd_data_l2_agg_location_multiclass_train.rds ( 3044 rows)
+        ✓ Saved: spd_data_l2_agg_location_multiclass_test.rds ( 939 rows)
+        Train distribution: Dark=975, In=1808, Out=261
+        Test distribution: Dark=295, In=534, Out=110
+      SMOTE-TOMEK: smote_tomek
+        Applying SMOTE-TOMEK...
+✓ SMOTE-TOMEK balancing completed
+        Generated 2146 new synthetic samples
+        ✓ SMOTE-TOMEK applied successfully
+        ✓ Saved: spd_data_l2_agg_location_multiclass_smote_tomek_train.rds ( 5190 rows)
+        ✓ Saved: spd_data_l2_agg_location_multiclass_smote_tomek_test.rds ( 939 rows)
+        Train distribution: Dark=1744, In=1701, Out=1745
+        Test distribution: Dark=295, In=534, Out=110
+
+✓ Saved participant split information

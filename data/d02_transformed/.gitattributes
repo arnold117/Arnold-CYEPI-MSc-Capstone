@@ -1,0 +1,10 @@
+alpha_data.rds filter=lfs diff=lfs merge=lfs -text
+spd_data.rds filter=lfs diff=lfs merge=lfs -text
+sensor_data.rds filter=lfs diff=lfs merge=lfs -text
+sensor_data_l2.rds filter=lfs diff=lfs merge=lfs -text
+alpha_data_l2.rds filter=lfs diff=lfs merge=lfs -text
+spd_data_l2.rds filter=lfs diff=lfs merge=lfs -text
+alpha_data_log.rds filter=lfs diff=lfs merge=lfs -text
+spd_data_log.rds filter=lfs diff=lfs merge=lfs -text
+sensor_data_log.rds filter=lfs diff=lfs merge=lfs -text
+*.rds filter=lfs diff=lfs merge=lfs -text
