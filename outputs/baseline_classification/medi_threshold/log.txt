@@ -1,0 +1,34 @@
+================================================================================ 
+SIMPLIFIED MEDI THRESHOLD CLASSIFICATION
+================================================================================ 
+
+Performing detailed threshold grid search from 10 to 10000 lx mEDI (1 lux increments)...
+Testing 9991 threshold values from 10 to 10000 lux...
+✓ Grid search completed
+
+=== KEY RESULTS ===
+Best Outdoor Precision at 636 lux (log10 = 2.803 ):
+  Outdoor Precision: 0.375 
+  Indoor Precision: 0.852 
+  Overall Accuracy: 0.805 
+  Sensitivity (Outdoor Recall): 0.218 
+  Specificity (Indoor Recall): 0.925 
+  F1 Score: 0.276 
+  AUC: 0.616 
+
+At log10(1000) = 3 threshold ( 1000  lux):
+  Outdoor Precision: 0.32 
+  Indoor Precision: 0.842 
+  Overall Accuracy: 0.802 
+  Sensitivity (Outdoor Recall): 0.145 
+  Specificity (Indoor Recall): 0.936 
+  F1 Score: 0.2 
+  AUC: 0.616 
+
+Creating metrics vs threshold plot...
+✓ Simplified plots saved
+
+ ================================================================================ 
+THRESHOLD CLASSIFICATION COMPLETED
+Results saved to:  C:/Users/arnold.zhou/Documents/LightSpan/cyepi-analysis/outputs/baseline_classification/medi_threshold 
+================================================================================ 
