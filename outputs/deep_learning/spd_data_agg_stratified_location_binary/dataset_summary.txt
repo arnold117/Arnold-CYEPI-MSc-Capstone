@@ -1,0 +1,7 @@
+Dataset Summary:
+ Training: 1834 x 10 
+ Testing: 480 x 10 
+
+ Target Distribution ( location ):
+ Train: In:1575 | Out:259 
+ Test:  In:410 | Out:70 

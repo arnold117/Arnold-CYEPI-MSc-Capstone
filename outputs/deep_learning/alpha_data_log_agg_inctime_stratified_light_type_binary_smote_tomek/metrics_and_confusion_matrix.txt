@@ -1,0 +1,18 @@
+Test AUC Score: 0.1826
+Test Accuracy: 0.2537
+Test Precision: 0.2640
+Test Recall: 0.1661
+
+Confusion Matrix:
+[[ 86 145]
+ [261  52]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  Artificial       0.25      0.37      0.30       231
+     Natural       0.26      0.17      0.20       313
+
+    accuracy                           0.25       544
+   macro avg       0.26      0.27      0.25       544
+weighted avg       0.26      0.25      0.24       544

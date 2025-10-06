@@ -1,0 +1,7 @@
+Dataset Summary:
+ Training: 2152 x 7 
+ Testing: 578 x 7 
+
+ Target Distribution ( light_type ):
+ Train: Artificial:1076 | Natural:1076 
+ Test:  Artificial:202 | Natural:376 

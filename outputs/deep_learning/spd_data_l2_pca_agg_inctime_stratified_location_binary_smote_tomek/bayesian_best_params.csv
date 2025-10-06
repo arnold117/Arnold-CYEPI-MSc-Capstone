@@ -1,0 +1,11 @@
+parameter,value,interpreted_value
+lr_log,-1.5242618167438753,0.0299
+l1_l2_log,-3.015839925323222,0.000964
+dropout_rate,0.34801677362249894,0.3480
+batch_size_idx,0.0,16
+optimizer_idx,2.0,rmsprop
+hidden_size_1,256.0,256
+hidden_size_2,256.0,256
+hidden_size_3,256.0,256
+hidden_size_4,97.0,97
+use_batch_norm_num,1.0,TRUE
