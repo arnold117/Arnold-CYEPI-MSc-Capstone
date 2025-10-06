@@ -1,0 +1,7 @@
+"Dataset","Distributions","Importance","Correlations","Conditional","Discrimination","CrossLabels"
+"alpha_data_hlea_hourly_agg",3,3,4,3,3,3
+"alpha_data_l2_hlea_hourly_agg",3,3,4,3,3,3
+"sensor_data_hlea_hourly_agg",3,3,4,3,3,3
+"sensor_data_l2_hlea_hourly_agg",3,3,4,3,3,3
+"spd_data_hlea_hourly_agg",3,3,4,3,3,3
+"spd_data_l2_hlea_hourly_agg",3,3,4,3,3,3
